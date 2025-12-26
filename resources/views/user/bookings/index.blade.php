@@ -142,7 +142,7 @@
 
 <style>
     :root {
-        --primary-color: #4f46e5;
+        --primary-color: #4faf18;
         --soft-primary: #eef2ff;
         --soft-success: #ecfdf5;
         --soft-warning: #fffbeb;
