@@ -48,7 +48,7 @@
                                     <h6 class="card-title">
                                         <i class="fas fa-clock me-1"></i>Giờ hoạt động
                                     </h6>
-                                    <p class="mb-0">6:00 AM - 10:00 PM</p>
+                                    <p class="mb-0">5:00 AM - 10:00 PM</p>
                                     <small>Đặt sân trước ít nhất 1 giờ</small>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                                     name="start_time"
                                     required>
                                 <option value="">Chọn giờ</option>
-                                @for($hour = 6; $hour <= 22; $hour++)
+                                @for($hour = 5; $hour <= 22; $hour++)
                                     @php $time = sprintf('%02d:00', $hour); @endphp
                                     <option value="{{ $time }}"
                                         {{ old('start_time', $preFill['start_time']) === $time ? 'selected' : '' }}>
@@ -112,7 +112,7 @@
                                     name="end_time"
                                     required>
                                 <option value="">Chọn giờ</option>
-                                @for($hour = 7; $hour <= 23; $hour++)
+                                @for($hour = 6; $hour <= 23; $hour++)
                                     @php $time = sprintf('%02d:00', $hour); @endphp
                                     <option value="{{ $time }}"
                                         {{ old('end_time', $preFill['end_time']) === $time ? 'selected' : '' }}>
